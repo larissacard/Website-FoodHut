@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
+}
+
+nav a{
+    margin-right: 2rem;
+    color: #191919;
+    text-decoration: none;
+}
+
+nav input{
+    background-color: #F54748;
+    width: 162px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+}
+
+.pag1{
+    display: flex;
+    align-items: center;
+}
+
+
