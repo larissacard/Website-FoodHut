@@ -5,17 +5,18 @@ header{
     justify-content: space-around;
 }
 
-body{
-    background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
-}
-
 nav a{
     margin-right: 2rem;
     color: #191919;
     text-decoration: none;
+    width: 660px;
+    height: 24px;
+    left: 461px;
+    top: 47px;
+
 }
 
-nav input{
+header input{
     background-color: #F54748;
     width: 162px;
     height: 45px;
@@ -27,6 +28,26 @@ nav input{
 .pag1{
     display: flex;
     align-items: center;
+
+}
+
+#baixar { 
+    background-color: #F54748;
+    width: 162px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+}
+
+#pesquisa{
+    box-sizing: border-box;
+    border: 0.5px solid #191919;
+    border-radius: 50px;
+    width: 471px;
+    height: 54px;
+    left: 70px;
+    top: 568px;
 }
 
 
