@@ -34,6 +34,19 @@ nav a{
     color: white;
 }
 
+h2{
+    margin: auto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+
+    width: 452px;
+    height: 124px;
+    left: 639px;
+    top: 2039px;
+}
+
+
 .pag1{
     display: flex;
     align-items: center;
@@ -132,10 +145,12 @@ nav a{
     width:856px;
 }
 
+
 .catalogo{
     margin: 40px;
     display: flex;
     justify-content: center;
+    gap: 18px;
 }
 
 .catalogo p{
@@ -157,6 +172,8 @@ nav a{
     align-items: center;
     flex-direction: column;
     border: solid 1px;
+    width: 20%;
+    
 }
 
 .cardapio p{
@@ -166,23 +183,14 @@ nav a{
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+    text-align: center;
 }
 
 .pag3{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-
-.pag3 h2{
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 62px;
-
-    width: 452px;
-    height: 124px;
-    left: 639px;
-    top: 2039px;
+    justify-content: center;
+    gap: 200px;
 }
 
 .pag3 p{
@@ -197,24 +205,45 @@ nav a{
     opacity: 0.8;
 }
 
-.pag lu{
-    
-}
-
 .pag3 li{
+    margin-top: 10px;
     list-style-type: none;
     font-size: 18px;
     color: #191919;
 }
 
 .pag4 h2{
-    
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 62px;
-
-    width: 452px;
-    height: 124px;
-    left: 639px;
-    top: 2039px;
+    width: 653px;
+    text-align: center;
 }
+
+.pag4 .bttns-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    list-style-type: none;
+}
+.pag4 .bttns-menu input{
+    color: #191919;
+    opacity: 0.8;
+    width: 98px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 1px ;
+
+}
+
+.pag4 .bttn-clicked{
+    background-color: #F54748;
+    border: none;
+} 
+
+.catalogo2{ 
+    display: flex;
+    flex-flow: row wrap;
+    gap: 18px;
+    
+}
+
