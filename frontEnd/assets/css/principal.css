@@ -40,6 +40,20 @@ nav a{
     justify-content: space-around;
 }
 
+.pag1 .um .confianca{
+    left: 76px;
+    top: 212px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 139px;
+    height: 28px;
+    background-color: #f547472c;
+    border-radius: 100px;
+
+}
+
 .pag1 .um h1{
     font-size: 58px;
     font-weight: 900;
@@ -49,7 +63,7 @@ nav a{
 
 }
 
-.pag1 .um .uno{
+.pag1 .um p{
     margin-top: 20px;
     color: #191919;
     font-size:24px;
@@ -73,7 +87,7 @@ nav a{
     border: 0.5px solid #191919;
 }
 
-.um #duno{
+.um .buttons{
     margin-top: 15px; 
     display: flex;
     align-items: center;
@@ -89,7 +103,7 @@ nav a{
     color: #686D77;
 }
 
-#duno-img{
+#buttons-img{
     box-shadow: 0px 15px 30px hsla(10, 69%, 60%, 0.32);
     border-radius: 100%;
     width: 52px;
@@ -124,13 +138,6 @@ nav a{
     justify-content: center;
 }
 
-.cardapio{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: solid 1px;
-}
-
 .catalogo p{
     font-weight: 400;
     font-size: 16px;
@@ -142,4 +149,72 @@ nav a{
 
 .catalogo input{
     width: 131px;
+}
+
+
+.cardapio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px;
+}
+
+.cardapio p{
+    width: 243px;
+    height: 63px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.pag3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pag3 h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+
+    width: 452px;
+    height: 124px;
+    left: 639px;
+    top: 2039px;
+}
+
+.pag3 p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    width: 690px;
+    height: 72px;
+
+    color: #191919;
+    opacity: 0.8;
+}
+
+.pag lu{
+    
+}
+
+.pag3 li{
+    list-style-type: none;
+    font-size: 18px;
+    color: #191919;
+}
+
+.pag4 h2{
+    
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+
+    width: 452px;
+    height: 124px;
+    left: 639px;
+    top: 2039px;
 }
