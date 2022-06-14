@@ -31,6 +31,8 @@ nav a{
     border-radius: 50px;
     border: none;
     color: white;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 h2{
@@ -70,7 +72,6 @@ h2{
     font-size: 58px;
     font-weight: 900;
     line-height: 78px;
-    border: 1px solid;
     width: 500px;
 
 }
@@ -81,10 +82,6 @@ h2{
     font-size:24px;
     font-weight: 400;   
     line-height: 32px;
-<<<<<<< HEAD
-=======
-    border: 1px solid;
->>>>>>> cf5e0f71d9f7d202435792c5ec49061f8c5f629e
     width: 500px;
     height: 96px;
     left: 70px;
@@ -118,11 +115,8 @@ h2{
     color: #686D77;
 }
 
-<<<<<<< HEAD
-.buttons-img{
-=======
 #buttons-img{
->>>>>>> cf5e0f71d9f7d202435792c5ec49061f8c5f629e
+
     box-shadow: 0px 15px 30px hsla(10, 69%, 60%, 0.32);
     border-radius: 100%;
     width: 52px;
@@ -178,12 +172,7 @@ h2{
     align-items: center;
     flex-direction: column;
     border: solid 1px;
-<<<<<<< HEAD
-    width: 310px;
-=======
     width: 20%;
-    
->>>>>>> cf5e0f71d9f7d202435792c5ec49061f8c5f629e
 }
 
 .cardapio p{
@@ -203,7 +192,12 @@ h2{
     gap: 200px;
 }
 
+.information h2{
+    margin-left: 0;
+}
+
 .pag3 p{
+    margin-top: 15px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -215,21 +209,31 @@ h2{
     opacity: 0.8;
 }
 
+.pag3 .listas{
+    padding-top: 15px;
+    display: flex;
+    gap: 150px;
+    padding-bottom: 20px;  
+}
+
 .pag3 li{
     margin-top: 10px;
     list-style-type: none;
     font-size: 18px;
     color: #191919;
-<<<<<<< HEAD
-    
-=======
->>>>>>> cf5e0f71d9f7d202435792c5ec49061f8c5f629e
+    align-items: center;
+}
+
+.pag3 input{
+    width: 114px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 24px
 }
 
 .pag4 h2{
     width: 653px;
     text-align: center;
-<<<<<<< HEAD
     margin-bottom: 40px;
 }
 
@@ -258,7 +262,6 @@ h2{
 .pag4 .bttns-menu input{
     color: #191919;
     opacity: 0.8;
-
     width: 98px;
     height: 44px;
     border-radius: 100px;
@@ -273,14 +276,21 @@ h2{
 } 
 
 .catalogo2{ 
-<<<<<<< HEAD
     margin: auto;
     display: flex;
     flex-direction:row;
     justify-content: center;
     gap: 18px; 
-    padding-bottom: 40px;  
-    
+    padding-bottom: 40px;    
+}
+
+.catalogo2 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #191919;
+    opacity: 0.8;
+    width: 243px;
 }
 
 .pag5{
@@ -364,16 +374,3 @@ h2{
     color: white;
     border: none;
 }
-
-/*display: flex;
-flex-flow: row wrap;
-align-items: center;
-gap: 18px;
-=======
-    display: flex;
-    flex-flow: row wrap;
-    gap: 18px;
-    
-}
-
->>>>>>> cf5e0f71d9f7d202435792c5ec49061f8c5f629e
