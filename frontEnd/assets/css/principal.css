@@ -1,26 +1,39 @@
+/*-------------------- GENERAL --------------------*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box ;
 }
 
+body{
+    background-color: #f547470c;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 nav a{
-    margin-right: 2rem;
+    /*margin-right: 2rem;*/
     color: #191919;
     text-decoration: none;
+    padding-left: 30px;
+    
+    
 }
 
-.colorR{
+.color-Red{
     color:#F54748
 }
 
-.colorY{
+.color-Yellow{
     color: #FDC55E;
 }
 
@@ -47,14 +60,28 @@ h2{
     top: 2039px;
 }
 
-
-.pag1{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.bttn-cardapio{
+    width: 131px;
+    height: 45px;
+    border-radius: 100px;
+    position: absolute;
+    top: 420px;
+    background: #F54748;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
 }
 
-.pag1 .um .confianca{
+/*-------------------- PAGINA 01 --------------------*/
+.banner-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.banner-one .content-one .trust{
     left: 76px;
     top: 212px;
 
@@ -68,7 +95,7 @@ h2{
 
 }
 
-.pag1 .um h1{
+.banner-one .content-one h1{
     font-size: 58px;
     font-weight: 900;
     line-height: 78px;
@@ -76,7 +103,7 @@ h2{
 
 }
 
-.pag1 .um p{
+.banner-one .content-one p{
     margin-top: 20px;
     color: #191919;
     font-size:24px;
@@ -99,7 +126,7 @@ h2{
     border: 0.5px solid #191919;
 }
 
-.um .buttons{
+.content-one .buttons{
     margin-top: 15px; 
     display: flex;
     align-items: center;
@@ -107,7 +134,7 @@ h2{
 
 }
 
-.um a{
+.content-one a{
     gap: 10px;
     display: flex;
     align-items: center;
@@ -123,11 +150,13 @@ h2{
     height: 52px;   
 }
 
-.pag2 .uno2{
+/*-------------------- PAGINA 02 --------------------*/
+
+.banner-two .content-two{
     text-align: center;
 }
 
-.pag2 .uno2 h2{
+.banner-two .content-two h2{
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -135,7 +164,7 @@ h2{
     color: #191919;
 }
 
-.pag2 .uno2 p{
+.banner-two .content-two p{
     margin: auto;
     font-weight: 400;
     font-size: 18px;
@@ -145,15 +174,76 @@ h2{
     width:856px;
 }
 
+.preco{
+    width: 50px;
+    height: 50px;
+    background-color: #FDC55E;
+    position: absolute;
+    float: right;
+    margin-left: 130px;
+    border-radius: 100%;
+    margin-top: 160px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    color: white;
+}
 
-.catalogo{
+.food{
+    width: 198px;
+    height: 198px;
+    border: solid 10px white;
+    border-radius: 50%;
+
+}
+
+.clientes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 156px;
+    height: 38px;
+}
+
+.card{
+    width: 310px;
+    height: 450px;
+    margin: 15px;
+    background-image: linear-gradient(180deg, #f5474700, #f5474700, #f5474744);
+    position: relative;
+    float: left;
+    border-radius: 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.border{
+    width: 240px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    background-image: linear-gradient(360deg, #f5474700, #f5474709, #f57e4774);
+}
+
+.catalog{
     margin: 40px;
     display: flex;
     justify-content: center;
     gap: 18px;
 }
 
-.catalogo p{
+.catalog p{
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -162,7 +252,7 @@ h2{
     width: 243px;
 }
 
-.catalogo input{
+.catalog input{
     width: 131px;
 }
 
@@ -171,21 +261,28 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: solid 1px;
     width: 20%;
+}
+
+.cardapio h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 33px;
+    width: 193px;
 }
 
 .cardapio p{
     width: 243px;
     height: 63px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     text-align: center;
 }
 
-.pag3{
+/*-------------------- PAGINA 03 --------------------*/
+.banner-three{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,7 +293,7 @@ h2{
     margin-left: 0;
 }
 
-.pag3 p{
+.banner-three p{
     margin-top: 15px;
     font-weight: 400;
     font-size: 18px;
@@ -209,14 +306,14 @@ h2{
     opacity: 0.8;
 }
 
-.pag3 .listas{
+.banner-three .listas{
     padding-top: 15px;
     display: flex;
     gap: 150px;
     padding-bottom: 20px;  
 }
 
-.pag3 li{
+.banner-three li{
     margin-top: 10px;
     list-style-type: none;
     font-size: 18px;
@@ -224,20 +321,21 @@ h2{
     align-items: center;
 }
 
-.pag3 input{
+.banner-three input{
     width: 114px;
     height: 45px;
     font-size: 18px;
     line-height: 24px
 }
 
-.pag4 h2{
+/*-------------------- PAGINA 04 --------------------*/
+.banner-four h2{
     width: 653px;
     text-align: center;
     margin-bottom: 40px;
 }
 
-.pag4 .bttns-menu{
+.banner-four .bttns-menu{
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -246,12 +344,12 @@ h2{
     gap: 30px;
 
 }
-.pag4 .bttns-menu input{
+.banner-four .bttns-menu input{
     color: #191919;
 
 }
 
-.pag4 .bttns-menu{
+.banner-four .bttns-menu{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -259,7 +357,7 @@ h2{
     gap: 30px;
     list-style-type: none;
 }
-.pag4 .bttns-menu input{
+.banner-four .bttns-menu input{
     color: #191919;
     opacity: 0.8;
     width: 98px;
@@ -270,12 +368,12 @@ h2{
 
 }
 
-.pag4 .bttn-clicked{
+.banner-four .bttn-clicked{
     background-color: #F54748;
     border: none;
 } 
 
-.catalogo2{ 
+.catalog2{ 
     margin: auto;
     display: flex;
     flex-direction:row;
@@ -284,7 +382,7 @@ h2{
     padding-bottom: 40px;    
 }
 
-.catalogo2 p{
+.catalog2 p{
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -293,20 +391,22 @@ h2{
     width: 243px;
 }
 
-.pag5{
+/*-------------------- PAGINA 05 --------------------*/
+
+.banner-five{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.pag5 h2{
+.banner-five h2{
     width: 600px;
     font-weight: 700;
     font-size: 48px;
     line-height: 67px;
 }
 
-.pag5 p{
+.banner-five p{
     margin-top: 35px;
     width: 550px;
     height: 72px;   
@@ -319,8 +419,9 @@ h2{
     padding-bottom: 35px;
 }
 
+/*-------------------- FOOTER --------------------*/
 
-.lastone{
+.last-one{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -331,12 +432,12 @@ h2{
     padding-bottom: 100px;
 }
 
-.lastone h3{
+.last-one h3{
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
 }
-.lastone p{
+.last-one p{
     margin-top:10px;
     font-weight: 400;
     font-size: 18px;
@@ -345,7 +446,7 @@ h2{
     color: #191919;
 }
 
-.lastone .aboutus{
+.last-one .aboutus{
     margin-top: 10px;
     font-weight: 400;
     font-size: 18px;
@@ -353,7 +454,7 @@ h2{
     margin-bottom: 10px;
 }
 
-.lastone .email{
+.last-one .email{
     margin-top: 20px;
     width: 205px;
     border-radius: 38px;
@@ -365,7 +466,7 @@ h2{
     
 }
 
-.lastone .subscribe{
+.last-one .subscribe{
 
     width: 118px;
     height: 50px;
