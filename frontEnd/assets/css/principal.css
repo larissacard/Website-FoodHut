@@ -5,9 +5,10 @@
     padding: 0;
     box-sizing: border-box ;
 }
-
+.color{
+    background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
+}
 body{
-    background-color: #f547470c;
     max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
@@ -124,6 +125,32 @@ h2{
     border-radius: 100px;
     background-color: white;
     border: 0.5px solid #191919;
+    background-image: url(../icon/bx_bx-search.png);
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+
+#pesq{
+    position: absolute;
+    left: 625px;
+    top: 526px;
+    background-image: url(../icon/Group\ 8430.png);
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50px;
+}
+
+input::placeholder{
+    padding-left: 50px;
+    color: #191919;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 99px;
+    height: 24px;
+    letter-spacing: -0.01em;
 }
 
 .content-one .buttons{
@@ -143,15 +170,22 @@ h2{
 }
 
 #buttons-img{
-
     box-shadow: 0px 15px 30px hsla(10, 69%, 60%, 0.32);
     border-radius: 100%;
     width: 52px;
     height: 52px;   
 }
 
+.img-girl{
+    width: 430px;
+    height: 568px;
+}
 /*-------------------- PAGINA 02 --------------------*/
 
+.banner-two{
+    margin-top: 150px;
+    background-color: white;
+}
 .banner-two .content-two{
     text-align: center;
 }
@@ -397,6 +431,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border: solid 1px;
 }
 
 .banner-five h2{
