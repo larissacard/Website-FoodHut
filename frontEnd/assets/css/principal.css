@@ -313,6 +313,7 @@ input::placeholder{
 
 /*-------------------- PAGINA 03 --------------------*/
 .banner-three{
+    margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,6 +361,7 @@ input::placeholder{
 
 /*-------------------- PAGINA 04 --------------------*/
 .banner-four h2{
+    margin-top: 150px;
     width: 653px;
     text-align: center;
     margin-bottom: 40px;
@@ -424,10 +426,12 @@ input::placeholder{
 /*-------------------- PAGINA 05 --------------------*/
 
 .banner-five{
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: solid 1px;
+    background: linear-gradient(180deg, rgba(255, 255,255, 0) 0%, #fdc55e3f 73.18%);
+    margin-bottom: 100px;
 }
 
 .banner-five h2{
@@ -498,7 +502,6 @@ input::placeholder{
 }
 
 .last-one .subscribe{
-
     width: 118px;
     height: 50px;
     border-radius: 38px;
@@ -506,3 +509,5 @@ input::placeholder{
     color: white;
     border: none;
 }
+
+
