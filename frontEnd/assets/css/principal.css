@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*-------------------- GENERAL --------------------*/
 
 *{
@@ -5,20 +6,29 @@
     padding: 0;
     box-sizing: border-box ;
 }
+
 .color{
     background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
 }
+
 body{
-    max-width: 1800px;
+
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    padding: 0 5%;
 }
 
 header{
+    border: solid 1px black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.nav-hidden{
+    display: none;
 }
 
 nav a{
@@ -26,7 +36,7 @@ nav a{
     color: #191919;
     text-decoration: none;
     padding-left: 30px;
-    
+    border: solid 1px black;
     
 }
 
@@ -38,7 +48,7 @@ nav a{
     color: #FDC55E;
 }
 
-.bttn{
+.bttn, .bttn-1{
     background-color: #F54748;
     width: 162px;
     height: 45px;
@@ -50,6 +60,8 @@ nav a{
 }
 
 h2{
+
+    border: solid 1px black;
     margin: auto;
     font-weight: 700;
     font-size: 48px;
@@ -59,6 +71,7 @@ h2{
     height: 124px;
     left: 639px;
     top: 2039px;
+    max-width: 100%;
 }
 
 .bttn-cardapio{
@@ -80,6 +93,15 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    max-width: 100%;
+    border: solid 1px black;
+}
+
+.content-one{
+    max-width: 100%;
+    border: solid 1px black;
+    height: auto;
 }
 
 .banner-one .content-one .trust{
@@ -93,7 +115,18 @@ h2{
     height: 28px;
     background-color: #f547472c;
     border-radius: 100px;
+}
+.img-girl{
+    display: flex;
+    align-items: flex-start;
+    margin-right: -7.2%;
+}
 
+.img-girl img{
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
 }
 
 .banner-one .content-one h1{
@@ -101,7 +134,7 @@ h2{
     font-weight: 900;
     line-height: 78px;
     width: 500px;
-
+    border: solid 1px black;
 }
 
 .banner-one .content-one p{
@@ -117,7 +150,6 @@ h2{
 }
 
 #pesquisar{
-    margin-top: 15px;
     width: 471px;
     height: 54px;
     left: 70px;
@@ -130,15 +162,21 @@ h2{
     background-position: 15px;
 }
 
+.pesq-alinhar{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
 #pesq{
-    position: absolute;
-    left: 625px;
-    top: 526px;
+    position: relative;
     background-image: url(../icon/Group\ 8430.png);
     width: 42px;
     height: 42px;
     border: none;
     border-radius: 50px;
+    margin-left: -10%;
+    
 }
 
 input::placeholder{
@@ -182,6 +220,7 @@ input::placeholder{
     margin-top: 150px;
     background-color: white;
 }
+
 .banner-two .content-two{
     text-align: center;
 }
@@ -202,6 +241,7 @@ input::placeholder{
     color: #191919;
     opacity: 0.9;
     width:856px;
+    max-width: 100%;
 }
 
 .preco{
@@ -267,10 +307,12 @@ input::placeholder{
 }
 
 .catalog{
-    margin: 40px;
+    margin: 35px;
     display: flex;
     justify-content: center;
     gap: 18px;
+    border: solid 1px yellow;
+
 }
 
 .catalog p{
@@ -291,7 +333,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 20%;
+    border: solid 1px black;
 }
 
 .cardapio h3{
@@ -318,6 +360,29 @@ input::placeholder{
     align-items: center;
     justify-content: center;
     gap: 200px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.information{
+    max-width: 100%;
+    border: solid 1px black;
+    height: auto;
+}
+
+
+.imgchef{
+    display: flex;
+    align-items: flex-start;
+    margin-right: -7.2%;
+}
+
+.imgchef img{
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+    flex-wrap: wrap-reverse;
 }
 
 .information h2{
@@ -335,13 +400,14 @@ input::placeholder{
 
     color: #191919;
     opacity: 0.8;
+    max-width: 100%;
 }
 
 .banner-three .listas{
     padding-top: 15px;
     display: flex;
     gap: 150px;
-    padding-bottom: 20px;  
+    padding-bottom: 10px;  
 }
 
 .banner-three li{
@@ -510,6 +576,25 @@ input::placeholder{
     border: none;
 }
 
-
-
-
+/*-------------------- RESPONSIVO --------------------*/
+@media (max-width:600px){ 
+    nav{
+        display: none;
+    }
+    .nav-hidden{
+        display: inline;
+        width: 36px;
+        height: 27px;
+    }
+    .bttn-1{
+        display: none;
+    }
+    .listas{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0%;
+    }
+    .listainfo2{
+        margin-top: none;
+    }
+}
