@@ -25,7 +25,8 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
 .burguer{
@@ -45,6 +46,9 @@ nav a{
 
 .color-Yellow{
     color: #FDC55E;
+}
+.bttn-1{
+    margin-left: 50px;
 }
 
 .bttn, .bttn-1{
@@ -206,6 +210,17 @@ input::placeholder{
     margin-bottom: 1.5rem;
     max-width: 100%;
     height: auto;
+}
+
+.arrow-one {
+    position: relative;
+    right: 12%;
+    max-width: 100%;
+    height: auto;
+}
+
+.arrow-two{
+    display: none;
 }
 
 
@@ -444,20 +459,11 @@ input::placeholder{
     justify-content: center;
     padding: 0px;
     gap: 30px;
-
-}
-.banner-four .bttns-menu input{
-    color: #191919;
-}
-
-.banner-four .bttns-menu{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 30px;
     list-style-type: none;
+    max-width: 100%;
+    
 }
+
 .banner-four .bttns-menu input{
     color: #191919;
     opacity: 0.8;
@@ -624,6 +630,13 @@ input::placeholder{
     nav{
         display: none;
     }
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
     .burguer{
         display: inline;
         width: 36px;
@@ -638,5 +651,44 @@ input::placeholder{
     .banner-five p{
         height: auto;
         width: 100%;
+    }   
+    .bttns-menu li:nth-child(n+4){
+       display: none;
+    }
+    .catalog div:nth-child(n+2){
+        display: none;
+    }
+    .catalog2 div:nth-child(n+2){
+        display: none;
+    }
+    .content-one{
+        max-width: 100%;
+        height: auto;
+        border: solid 1px black;
+        pad: 0 5%;
+    }
+    .banner-one{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap-reverse;
+        max-width: 100%;
+    }
+    .content-one h1{
+        max-width: 100%;
+    }
+    .content-one p{
+        max-width: 100%;
+        height: auto;
+    }
+    .arrow-one {
+        display: none;
+    }
+    .arrow-two {
+        display: inline;
+        position: relative;
+        right: 24%;
+        max-width: 100%;
+        height: auto;
     }
 }
