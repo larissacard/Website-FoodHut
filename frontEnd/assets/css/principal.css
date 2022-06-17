@@ -17,6 +17,7 @@ body{
     margin-right: auto;
     width: 100%;
     padding: 0 5%;
+    
 }
 
 header{
@@ -359,15 +360,15 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 200px;
+    gap: 100px;
     flex-wrap: wrap;
     max-width: 100%;
 }
 
 .information{
-    max-width: 100%;
     border: solid 1px black;
     height: auto;
+    max-width: 100%;
 }
 
 
@@ -382,7 +383,7 @@ input::placeholder{
     max-width: 100%;
     height: auto;
     border: 1px solid black;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 
 .information h2{
@@ -408,6 +409,11 @@ input::placeholder{
     display: flex;
     gap: 150px;
     padding-bottom: 10px;  
+    flex-flow: row;
+}
+
+.listainfo1{
+    width: 50%;
 }
 
 .banner-three li{
@@ -492,12 +498,31 @@ input::placeholder{
 /*-------------------- PAGINA 05 --------------------*/
 
 .banner-five{
-    margin-top: 50px;
+    margin-top: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(180deg, rgba(255, 255,255, 0) 0%, #fdc55e3f 73.18%);
-    margin-bottom: 100px;
+    justify-content: center;
+    gap: 100px;
+    max-width: 100%;
+    flex-wrap: wrap-reverse;
+}
+
+.blabla{
+    max-width: 100%;
+    border: solid 1px black;
+    height: auto;
+}
+
+.imgchef2{
+    display: flex;
+    align-items: flex-start;
+    margin-right: -7.2%;
+}
+
+.imgchef2 img{
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .banner-five h2{
@@ -505,6 +530,8 @@ input::placeholder{
     font-weight: 700;
     font-size: 48px;
     line-height: 67px;
+    width: 100%;
+    height: auto;
 }
 
 .banner-five p{
@@ -518,6 +545,9 @@ input::placeholder{
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 35px;
+    width: 100%;
+    margin-bottom: 2%;
+    width: 100%;
 }
 
 /*-------------------- FOOTER --------------------*/
@@ -588,13 +618,5 @@ input::placeholder{
     }
     .bttn-1{
         display: none;
-    }
-    .listas{
-        display: flex;
-        flex-direction: column;
-        padding: 0 0%;
-    }
-    .listainfo2{
-        margin-top: none;
     }
 }
