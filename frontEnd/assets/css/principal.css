@@ -420,9 +420,8 @@ input::placeholder{
 .banner-three .listas{
     padding-top: 15px;
     display: flex;
-    gap: 150px;
     padding-bottom: 10px;  
-    flex-flow: row;
+    flex-wrap: wrap;
 }
 
 .listainfo{
@@ -691,4 +690,13 @@ input::placeholder{
         max-width: 100%;
         height: auto;
     }
+    .listainfo{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .banner-three p{
+        width: 100%;
+        height: auto;
+    }
+    
 }
