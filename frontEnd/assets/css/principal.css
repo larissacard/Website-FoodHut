@@ -21,7 +21,724 @@ body{
     
 }
 
+header@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*-------------------- GENERAL --------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+.color{
+    background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
+}
+
+body{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 5%;
+    
+}
+
 header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.burguer{
+    display: none;
+}
+
+nav a{
+    color: #191919;
+    text-decoration: none;
+    padding-left: 30px;
+    
+}
+
+.color-Red{
+    color:#F54748
+}
+
+.color-Yellow{
+    color: #FDC55E;
+}
+
+.bttn, .bttn-1{
+    background-color: #F54748;
+    width: 162px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h2{
+    margin: auto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    width: 452px;
+    height: 124px;
+    left: 639px;
+    top: 2039px;
+    max-width: 100%;
+}
+
+.bttn-cardapio{
+    width: 131px;
+    height: 45px;
+    border-radius: 100px;
+    position: absolute;
+    top: 490px;
+    background: #F54748;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/*-------------------- PAGINA 01 --------------------*/
+.banner-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    max-width: 100%;
+}
+
+/*-------------------- PAGINA 01 - CONTEUDO 01 --------------------*/
+.content-one{
+    max-width: 100%;
+    height: auto;
+    margin: 1rem;
+}
+
+.banner-one .content-one .trust{
+    left: 76px;
+    top: 212px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 139px;
+    height: 28px;
+    background-color: #f547472c;
+    border-radius: 100px;
+}
+
+.banner-one .content-one h1{
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 78px;
+    width: 500px;
+}
+
+.banner-one .content-one p{
+    margin-top: 20px;
+    color: #191919;
+    font-size:24px;
+    font-weight: 400;   
+    line-height: 32px;
+    width: 500px;
+    height: 96px;
+    left: 70px;
+    top: 450px;
+}
+
+#pesquisar{
+    width: 471px;
+    height: 54px;
+    left: 70px;
+    top: 568px; 
+    border-radius: 100px;
+    background-color: white;
+    border: 0.5px solid #191919;
+    background-image: url(../icon/bx_bx-search.png);
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+
+.pesq-alinhar{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#pesq{
+    position: relative;
+    background-image: url(../icon/Group\ 8430.png);
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50px;
+    margin-left: -10%;
+    
+}
+
+input::placeholder{
+    padding-left: 50px;
+    color: #191919;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 99px;
+    height: 24px;
+    letter-spacing: -0.01em;
+}
+
+.content-one .buttons{
+    margin-top: 15px; 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.content-one a{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #686D77;
+}
+
+#buttons-img{
+    box-shadow: 0px 15px 30px hsla(10, 69%, 60%, 0.32);
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;   
+}
+.title-one{
+    display: flex;
+    align-items: center;
+}
+/*-------------------- PAGINA 01 - IMAGEN --------------------*/
+.img-girl{
+    display: flex;
+    align-items: flex-start;
+    margin-right: -7.2%;
+}
+
+.img-girl img{
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.arrow-one{
+    position: relative;
+    right: 16%;
+    max-width: 100%;
+    height: auto;
+}
+
+.arrow-two{
+    display: none;
+}
+
+.orange-img{
+    position: relative;
+    align-self: flex-start;
+    left: -7%;
+}
+
+
+
+/*-------------------- PAGINA 02 --------------------*/
+
+.banner-two{
+    margin-top: 150px;
+    background-color: white;
+}
+
+/*-------------------- PAGINA 02 - CONTEUDO 02 --------------------*/
+
+.banner-two .content-two{
+    text-align: center;
+}
+
+.banner-two .content-two h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67px; 
+    color: #191919;
+}
+
+.banner-two .content-two p{
+    margin: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #191919;
+    opacity: 0.9;
+    width:856px;
+    max-width: 100%;
+}
+/*-------------------- PAGINA 02 - CARDAPIO --------------------*/
+
+.preco{
+    width: 50px;
+    height: 50px;
+    background-color: #FDC55E;
+    position: absolute;
+    float: right;
+    margin-left: 130px;
+    border-radius: 100%;
+    margin-top: 160px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    color: white;
+}
+
+.food{
+    width: 198px;
+    height: 198px;
+    border: solid 10px white;
+    border-radius: 50%;
+
+}
+
+.clientes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 156px;
+    height: 38px;
+}
+
+.card{
+    width: 310px;
+    height: 516px;
+    margin: 15px;
+    background-image: linear-gradient(180deg, #f5474700, #f5474700, #f5474744);
+    position: relative;
+    float: left;
+    border-radius: 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.border{
+    width: 240px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    background-image: linear-gradient(360deg, #f5474700, #f5474709, #f57e4774);
+}
+
+.catalog{
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    max-width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.catalog p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #191919;
+    opacity: 0.8;
+    width: 243px;
+}
+
+.catalog input{
+    width: 131px;
+}
+
+
+.cardapio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardapio h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 33px;
+    width: 193px;
+}
+
+.cardapio p{
+    width: 243px;
+    height: 63px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+/*-------------------- PAGINA 03 --------------------*/
+.banner-three{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+/*-------------------- PAGINA 03 - CONTEUDO 03 --------------------*/
+
+.content-three{
+    height: auto;
+    max-width: 100%;
+}
+
+
+.imgchef{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.imgchef img{
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.content-three h2{
+    margin-left: 0;
+    height: auto;
+}
+
+.banner-three p{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    width: 690px;
+    height: 72px;
+
+    color: #191919;
+    opacity: 0.8;
+    max-width: 100%;
+}
+
+.banner-three .listas{
+    padding-top: 15px;
+    display: flex;
+    padding-bottom: 10px;  
+    flex-wrap: wrap;
+}
+
+.listainfo{
+    width: 50%;
+}
+
+.banner-three li{
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 18px;
+    color: #191919;
+    align-items: center;
+}
+
+.banner-three input{
+    width: 114px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 24px
+}
+
+/*-------------------- PAGINA 04 --------------------*/
+.banner-four h2{
+    margin-top: 150px;
+    width: 653px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner-four .bttns-menu{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    gap: 30px;
+
+}
+.banner-four .bttns-menu input{
+    color: #191919;
+}
+
+.banner-four .bttns-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    list-style-type: none;
+}
+.banner-four .bttns-menu input{
+    color: #191919;
+    opacity: 0.8;
+    width: 98px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 1px ;
+    margin-bottom: 40px;
+
+}
+
+.banner-four .bttn-clicked{
+    background-color: #F54748;
+    border: none;
+} 
+
+.catalog2{ 
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 18px; 
+    padding-bottom: 40px; 
+    max-width: 100%;   
+    flex-wrap: wrap;
+}
+
+.catalog2 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #191919;
+    opacity: 0.8;
+    width: 243px;
+}
+
+/*-------------------- PAGINA 05 --------------------*/
+
+.banner-five{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgba(255, 255,255, 0) 0%, #fdc55e3f 73.18%);
+    margin-bottom: 100px;
+    flex-wrap: wrap-reverse;
+    max-width: 100%;
+}
+
+/*-------------------- PAGINA 05 - CONTEUDO 04 --------------------*/
+
+.content-four{
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-five p{
+    margin-top: 35px;
+    width: 550px;
+    height: 72px;   
+    color: #191919;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 35px;
+    height: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.imgchef2{
+    display: flex;
+    align-items: flex-start;
+    margin-right: -7.2%;
+}
+
+.imgchef2 img{
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-five h2{
+    width: 600px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*-------------------- FOOTER --------------------*/
+
+.last-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0%;
+    right: 0%;
+    top: 92.23%;
+    bottom: 0%;
+    padding-bottom: 100px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.foodhut{
+    width: 325px;
+}
+
+.last-one h3{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+}
+.last-one p{
+    margin-top:10px;
+    font-weight: 400;
+    width:100px;
+    color: #191919;
+    font-size: 18px;
+    line-height: 24px;
+}
+.social-media{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.get-in-touch p{
+    width: 379px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    height: 48px;
+}
+
+
+.last-one .email{
+    margin-top: 20px;
+    width: 205px;
+    border-radius: 38px;
+    height: 50px;
+    border: solid 1px;
+    background-color: #191919;
+    opacity: 0.1;
+    color: #191919;
+    
+}
+
+.last-one .subscribe{
+    width: 118px;
+    height: 50px;
+    border-radius: 38px;
+    background-color: #F54748;
+    color: white;
+    border: none;
+}
+
+/*-------------------- RESPONSIVO - CELULAR --------------------*/
+@media (max-width:480px){ 
+    nav{
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+    .burguer{
+        display: inline;
+        width: 36px;
+        height: 27px;
+    }
+    .bttn-1{
+        display: none;
+    }
+    .banner-five h2{
+        height: auto;
+    }
+    .banner-five p{
+        height: auto;
+        width: 100%;
+    }   
+    .bttns-menu li:nth-child(n+4){
+       display: none;
+    }
+    .catalog div:nth-child(n+2){
+        display: none;
+    }
+    .catalog2 div:nth-child(n+2){
+        display: none;
+    }
+    .content-one{
+        max-width: 100%;
+        height: auto;
+        pad: 0 5%;
+    }
+    .banner-one{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap-reverse;
+        max-width: 100%;
+    }
+    .content-one h1{
+        max-width: 100%;
+    }
+    .content-one p{
+        max-width: 100%;
+        height: auto;
+    }
+    .arrow-one {
+        display: none;
+    }
+    .arrow-two {
+        display: inline;
+        position: relative;
+        right: 24%;
+        max-width: 100%;
+        height: auto;
+    }
+    .listainfo{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .banner-three p{
+        width: 100%;
+        height: auto;
+    }
+    
+}
     display: flex;
     flex-direction: row;
     align-items: center;
