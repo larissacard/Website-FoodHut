@@ -25,8 +25,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
+    justify-content: space-evenly;
 }
 
 .burguer{
@@ -46,9 +45,6 @@ nav a{
 
 .color-Yellow{
     color: #FDC55E;
-}
-.bttn-1{
-    margin-left: 50px;
 }
 
 .bttn, .bttn-1{
@@ -210,11 +206,12 @@ input::placeholder{
     margin-bottom: 1.5rem;
     max-width: 100%;
     height: auto;
+
 }
 
-.arrow-one {
+.arrow-one{
     position: relative;
-    right: 12%;
+    right: 16%;
     max-width: 100%;
     height: auto;
 }
@@ -401,6 +398,7 @@ input::placeholder{
 
 .content-three h2{
     margin-left: 0;
+    height: auto;
 }
 
 .banner-three p{
@@ -458,11 +456,20 @@ input::placeholder{
     justify-content: center;
     padding: 0px;
     gap: 30px;
-    list-style-type: none;
-    max-width: 100%;
-    
+
+}
+.banner-four .bttns-menu input{
+    color: #191919;
 }
 
+.banner-four .bttns-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    list-style-type: none;
+}
 .banner-four .bttns-menu input{
     color: #191919;
     opacity: 0.8;
@@ -663,7 +670,6 @@ input::placeholder{
     .content-one{
         max-width: 100%;
         height: auto;
-        border: solid 1px black;
         pad: 0 5%;
     }
     .banner-one{
